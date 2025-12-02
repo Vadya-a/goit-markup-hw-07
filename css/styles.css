@@ -735,10 +735,12 @@ border: 1px solid transparent
   
 }
 .form-input{
-  border: 1px solid var(--primer-color);
+  border: 1px solid #21212133;
   border-radius: 4px;
   height: 40px;
-  
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: 100%;
 }
 .agreement-link{
@@ -751,6 +753,8 @@ border: 1px solid transparent
 .form-textarea{
   height: 120px;
   width: 100%;
+  border: 1px solid #21212133;
+  border-radius: 4px;
 }
 .form-checkbox{
   font-weight: 400;
@@ -783,11 +787,22 @@ margin: auto;
   height: 18px;
   top: 11px;
   left: 12px;
+  fill: #000000;
 }
 .form-field {
   position: relative;
 }
 
-
+.form-input:focus + .form-icon{
+fill: var(--accent-color);
+}
+.form-input:focus{
+  border-color:#2196F3;
+  outline: none;
+}
+.form-textarea:focus{
+   border-color:#2196F3;
+   outline: none;
+}
 
 
