@@ -763,6 +763,8 @@ border: 1px solid transparent
   color: var(--primer-color);
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-button{
@@ -805,4 +807,26 @@ fill: var(--accent-color);
    outline: none;
 }
 
+.check-icon{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid black;
+  margin-right: 7px;
+}
 
+.checkbox-input:checked + .check-icon{
+  background-image: url(../images/icon-check.svg);
+  background-color: var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.checkbox-input{
+      position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+   
+}
