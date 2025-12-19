@@ -170,13 +170,13 @@ a {
 .contact-link:hover .contact-icon {
   fill: var(--accent-color);
 }
-.company-list{
+.client-list{
   display: flex;
     gap: 30px;
     justify-content: center;
 }
 
-.company-icon:hover {
+.client-icon:hover {
   fill: var(--accent-color);
 }
 .social-icon {
@@ -203,11 +203,11 @@ a {
     fill: #afb1b8;
   transition-duration: 250ms;
 }
-.company-section{
+.client-section{
   padding-top: 94px;
     padding-bottom: 94px
 }
-.company-title{
+.client-title{
       color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -216,10 +216,10 @@ a {
     margin-bottom: 50px
 }
 
-.company-item:hover {
+.client-item:hover {
   border-color: var(--accent-color);
 }
-.company-link {
+.client-link {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -230,21 +230,21 @@ a {
   transition-duration: 250ms;
 }
 
-.company-icon {
+.client-icon {
   fill: #afb1b8;
 }
 
-.company {
+.client {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
-.company-link:hover,
-.company-link:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
-.company-link:hover .company-icon,
-.company-link:focus .company-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
@@ -282,9 +282,24 @@ a {
   display: flex;
   transition-duration: 250ms;
 }
+.logo{
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #2196f3;
+  }
+.main-nav__logo{
+   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+}
 
-.logo {
-  color: var(--accent-color);
+.main-nav__logo--accent{
+   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -523,19 +538,20 @@ a {
   font-size: 18px;
   line-height: 2;
 }
-
-.thirs-logo {
-  color: var(--white-color);
+.footer-logo__accent{
+    color: var(--white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
 }
-.footer .home-adress {
+
+.home-adress {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
   margin-top: 25px;
+  
 }
 .home-adress {
   transition-duration: 250ms;
@@ -546,15 +562,27 @@ a {
   line-height: 1.71;
   transition-duration: 250ms;
 }
+.contact-link__footer{
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  transition-duration: 250ms;
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+}
+.con
 .last-nav:focus,
 .last-nav:hover {
   color: #2196f3;
 }
 .address {
   margin-top: 20px;
+  margin-bottom: 9px
 }
 
-.footer-nav {
+.footer{
   margin-right: 70px;
   width: 321px;
 }
@@ -565,7 +593,7 @@ a {
 .accent {
   color: var(--accent-color);
 }
-.footer {
+.footer-section {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -578,18 +606,15 @@ a {
 .footer-social {
   margin-bottom: 12px;
 }
-.company-container {
+.client-container {
   max-width: 100%;
 }
-.footer-link {
+.footer-link__list {
   display: flex;
-
   gap: 10px;
 }
-.footer-logo {
-  transition-duration: 250ms;
-}
-.social-footer {
+
+.footer-social__icon {
   fill: var(--white-color);
 }
 .project .item:hover {
@@ -599,7 +624,7 @@ a {
   position: relative;
 }
 
-.footer-icon {
+.footer-social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -612,10 +637,10 @@ a {
   justify-content: center;
   transition-duration: 250ms;
 }
-.footer-icon:hover {
+.footer-social__link:hover {
   background-color: #2196f3;
 }
-.social-title {
+.cta-title {
   color: #ffffff;
   font-size: 14px;
   margin-bottom: 22px;
