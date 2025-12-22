@@ -677,7 +677,7 @@ a {
   height: 581px;
   background-color: var(--white-color);
 }
-.modal-button {
+.close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -702,7 +702,7 @@ a {
 .form {
   margin-left: 93px;
 }
-.form-fields label {
+.footer-form__field label {
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
@@ -710,11 +710,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 22px;
 }
-.form-fields {
+.footer-form__field {
   display: block;
   flex-direction: column;
 }
-.form-fields input {
+.footer-form__field input {
   display: block;
   border-radius: 4px;
   border: 1px solid #ffffff4d;
@@ -724,10 +724,10 @@ a {
   height: 50px;
   padding: 15px 16px;
 }
-.form-field input::placeholder {
+.modal-form__field input::placeholder {
   margin-left: 15px;
 }
-.subscribe {
+.footer-form__button {
   display: flex;
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -740,27 +740,26 @@ a {
   padding: 10px 28px;
   justify-content: center;
   align-items: center;
-
   border: 1px solid transparent;
 }
 .subscribe-button {
   display: flex;
   margin-top: 20px;
 }
-.form-fields input:focus {
+.footer-form__field input:focus {
   outline: none;
 }
-.icon-send {
+.footer-form__icon {
   margin-left: 10px;
   fill: var(--white-color);
 }
-.form-group {
+.modal-form {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 40px;
 }
-.form-title {
+.modal-form__title {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -768,7 +767,7 @@ a {
   font-size: 20px;
   line-height: 100%;
 }
-.form-label {
+.modal-form__label {
   margin-bottom: 4px;
   margin-top: 10px;
   font-weight: 400;
@@ -776,7 +775,7 @@ a {
   line-height: 100%;
   color: var(--primer-color);
 }
-.form-input {
+.modal-form__input {
   border: 1px solid #21212133;
   border-radius: 4px;
   height: 40px;
@@ -785,7 +784,7 @@ a {
   padding-bottom: 12px;
   width: 100%;
 }
-.agreement-link {
+.modal-agreement__link {
   color: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -793,7 +792,7 @@ a {
   text-decoration: underline;
   margin-left: 5px;
 }
-.form-textarea {
+.modal-form__textarea {
   height: 120px;
   width: 100%;
   border: 1px solid #21212133;
@@ -801,7 +800,7 @@ a {
   padding: 12px 16px;
   resize: none;
 }
-.form-checkbox {
+.modal-form__checkbox {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -814,7 +813,7 @@ a {
   margin-right: auto;
 }
 
-.form-button {
+.modal-form__button {
   display: flex;
   font-weight: 700;
   font-size: 16px;
@@ -830,7 +829,7 @@ a {
   margin-left: 12px;
   cursor: pointer;
 }
-.form-icon {
+.modal-form__icon {
   position: absolute;
   width: 18px;
   height: 18px;
@@ -838,26 +837,26 @@ a {
   left: 12px;
   fill: #000000;
 }
-.form-field {
+.modal-form__field {
   position: relative;
 }
 
-.form-input:focus + .form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus {
+.modal-form__input:focus {
   border-color: #2196f3;
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-textarea:focus {
+.modal-form__textarea:focus {
   border-color: #2196f3;
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-icon {
+.modal-checkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -868,24 +867,27 @@ a {
   background-size: contain;
 }
 
-.checkbox-input:checked + .check-icon {
+.modal-checkbox-input:checked + .modal-checkbox__icon {
   background-image: url(../images/icon-check.svg);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input {
+.modal-checkbox-input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.button-option {
+.modal-button__option {
   display: flex;
   justify-content: center;
 }
 
-.modal-button:hover {
+.close-button:hover {
   fill: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form{
+  margin-left: 93px;
 }
