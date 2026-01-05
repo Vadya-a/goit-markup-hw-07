@@ -1,3 +1,44 @@
+:root {
+  --primer-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
 /*container*/
 .container {
   width: 1200px;
@@ -9,6 +50,11 @@
 /*header*/
 .page-header {
   border-bottom: solid 1px #ececec;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
 }
 /*logo*/
 
@@ -37,9 +83,6 @@
   line-height: 100%;
 }
 /*navigation*/
-.navigation {
-  margin-left: 93px;
-}
 .navigation {
   margin-left: 93px;
 }
@@ -310,12 +353,21 @@ gap: 30px;
   border-radius: 4px;
   transition-duration: 250ms;
 }
+.client-icon {
+  fill: #afb1b8;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 /*footer*/
-
+.footer-container {
+  display: flex;
+}
 .footer-section {
   background-color: #2f303a;
   padding-top: 60px;
@@ -385,6 +437,13 @@ gap: 30px;
   fill: var(--white-color);
 }
 /*footer-form*/
+.footer-form{
+  margin-left: 93px;
+}
+.footer-form__option {
+  display: flex;
+  margin-top: 20px;
+}
 .footer-form__field input:focus {
   outline: none;
 }
@@ -431,6 +490,7 @@ gap: 30px;
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
+  margin-left: 12px;
 }
 /*modal*/
 .modal {
@@ -470,6 +530,9 @@ gap: 30px;
   flex-direction: column;
   width: 100%;
   padding: 40px;
+}
+.modal-form__field {
+  position: relative;
 }
 .modal-form__title {
   align-items: center;
@@ -673,4 +736,17 @@ gap: 30px;
   font-size: 16px;
   line-height: 1.88;
   margin-top: 4px;
+}
+/*backdrop*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000001a;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

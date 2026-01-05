@@ -745,8 +745,9 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
+  margin-left: 12px;
 }
-.subscribe-button {
+.footer-form__option {
   display: flex;
   margin-top: 20px;
 }
