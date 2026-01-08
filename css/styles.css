@@ -746,6 +746,7 @@ a {
   align-items: center;
   border: 1px solid transparent;
   margin-left: 12px;
+  cursor: pointer;
 }
 .footer-form__option {
   display: flex;
@@ -863,8 +864,8 @@ a {
 
 .modal-checkbox__icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  width: 15px;
+  height: 16px;
   border-radius: 2px;
   border: 2px solid black;
   margin-right: 7px;

@@ -653,6 +653,7 @@ a {
           align-items: center;
   border: 1px solid transparent;
   margin-left: 12px;
+  cursor: pointer;
 }
 
 /*modal*/
